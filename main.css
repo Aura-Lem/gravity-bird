@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+
+body {
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.615);
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.navbar a:hover {
+    color: rgb(171, 55, 200);
+}
+
+.navbar .actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.action-button {
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.action-button.email { 
+    align-items: center;  
+}
+
+.action-button.login {
+
+    background-color: pink;
+    color: rgb(171, 55, 200);
+}
